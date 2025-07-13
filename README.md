@@ -1,73 +1,77 @@
-🛡️ PortScanner 1.0
+```markdown
+# 🔍 Port Scanner
 
-PortScanner 1.0 is a lightweight, multithreaded CLI port scanning tool written in Python. It scans a specified range of ports on a target host and provides contextual security recommendations based on open ports found.
+Python CLI tabanlı çoklu iş parçacıklı (multithreaded) port tarayıcı. Güvenlik önerileriyle birlikte açık portları tespit eder. Kullanıcı dostu arayüz, ASCII logo ve animasyonlu giriş ekranıyla birlikte gelir.
 
-⸻
+## 🚀 Özellikler
 
-🚀 Features
-	•	🔍 Multithreaded TCP Port Scanning
-	•	🧠 Built-in Security Recommendations for Common Ports
-	•	🎨 Animated ASCII Banner and Typewriter UI Effect
-	•	📦 Easy to install via requirements.txt
+- ⚡ Hızlı tarama (multi-threaded)
+- 🎨 Renkli terminal çıktısı (colorama + termcolor)
+- 🔠 ASCII logo ve type-effect animasyon
+- 🛡️ Açık portlara özel güvenlik önerileri
+- 🧪 CLI argüman desteği
 
-⸻
+---
 
-📦 Installation
-	1.	Clone the repo:
+## 🧰 Gereksinimler
 
-git clone https://github.com/yourusername/PortScanner.git
-cd PortScanner
+Proje sanal bir ortamda çalıştırılmalı:
 
-	2.	Create and activate a virtual environment:
-
-python3 -m venv portscanenv
-source portscanenv/bin/activate
-
-	3.	Install dependencies:
-
+```bash
+python3 -m venv venv
+source venv/bin/activate  # Windows için: venv\Scripts\activate
 pip install -r requirements.txt
+```
 
+---
 
-⸻
+## 📦 Kurulum
 
-🧪 Usage
+```bash
+git clone https://github.com/MuhammetSec-Exilex/Port-Scanner.git
+cd Port-Scanner
+python3 -m venv venv
+source venv/bin/activate
+pip install -r requirements.txt
+```
 
-python3 PortScanner_1.0.py -t <target> -sp <start_port> -ep <end_port>
+---
 
-Example:
+## 🧪 Kullanım
 
+```bash
+python3 PortScanner_1.0.py -t <hedef_ip_adresi> -sp <başlangıç_portu> -ep <bitiş_portu>
+```
+
+### Örnek:
+
+```bash
 python3 PortScanner_1.0.py -t scanme.nmap.org -sp 20 -ep 100
+```
 
+---
 
-⸻
+## 📸 Ekran Görüntüsü
 
-📌 Arguments
+![screenshot](https://github.com/MuhammetSec-Exilex/Port-Scanner/assets/image1.png)
 
-Argument	Description
--t, --target	Target IP address or domain (required)
--sp, --start_port	Start of the port range (required)
--ep, --end_port	End of the port range (required)
+---
 
+## 🧠 Örnek Güvenlik Uyarısı
 
-⸻
+```
+Port 21 (FTP): FTP transmits data in plaintext... 🔐 Öneri: FTPS/SFTP'ye geçin, anonim erişimi kapatın.
+```
 
-🔒 Example Output
+---
 
-[+] Port 22 is open
-[+] Port 80 is open
+## 👨‍💻 Geliştirici
 
-Port 22: 🔐 SSH should have root login disabled and use key-based authentication.
-Port 80: 🔁 Redirect HTTP to HTTPS and implement HSTS headers.
+- Muhammet Alperen Şıvgın – [GitHub](https://github.com/MuhammetSec-Exilex)
 
+---
 
-⸻
+## 📜 Lisans
 
-📄 License
-
-MIT License. Feel free to fork and contribute.
-
-⸻
-
-🙋‍♂️ Author
-
-Developed with ❤️ by Muhammet Alperen Şıvgın
+MIT Lisansı. Detaylar için `LICENSE` dosyasını inceleyin.
+```
