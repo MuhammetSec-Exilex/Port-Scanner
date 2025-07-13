@@ -1,21 +1,23 @@
-```markdown
-# 🔍 Port Scanner
 
+# 🔍 Port Scanner
+```markdown
 Python CLI tabanlı çoklu iş parçacıklı (multithreaded) port tarayıcı. Güvenlik önerileriyle birlikte açık portları tespit eder. Kullanıcı dostu arayüz, ASCII logo ve animasyonlu giriş ekranıyla birlikte gelir.
+```
 
 ## 🚀 Özellikler
-
+```markdown
 - ⚡ Hızlı tarama (multi-threaded)
 - 🎨 Renkli terminal çıktısı (colorama + termcolor)
 - 🔠 ASCII logo ve type-effect animasyon
 - 🛡️ Açık portlara özel güvenlik önerileri
 - 🧪 CLI argüman desteği
-
+```
 ---
 
 ## 🧰 Gereksinimler
-
+```markdown
 Proje sanal bir ortamda çalıştırılmalı:
+```
 
 ```bash
 python3 -m venv venv
