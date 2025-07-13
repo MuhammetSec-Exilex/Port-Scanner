@@ -53,7 +53,7 @@ python3 PortScanner_1.0.py -t scanme.nmap.org -sp 20 -ep 100
 
 ## 📸 Ekran Görüntüsü
 
-![screenshot](https://github.com/MuhammetSec-Exilex/Port-Scanner/assets/image1.png)
+![screenshot]([https://github.com/MuhammetSec-Exilex/Port-Scanner/assets/image1.png](https://github.com/MuhammetSec-Exilex/Port-Scanner/blob/main/assets/image1.png))
 
 ---
 
